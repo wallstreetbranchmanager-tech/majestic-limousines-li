@@ -4,89 +4,171 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Majestic Limousines | Long Island</title>
-<meta name="description" content="Majestic Limousines — 30+ years of white-glove service. Antique Rolls Royce, Excalibur, super-stretch SUVs, limo buses, Sprinter vans. Long trips with advanced notice, including North Carolina and Florida. Shirley, NY."/>
+<meta name="description" content="Majestic Limousines — 30+ years of white-glove service. Antique Rolls Royce, Excalibur, super-stretch SUVs, limo buses. Long trips with advanced notice to North Carolina and Florida. Shirley, NY."/>
 <link rel="canonical" href="https://majestic-limousines-li.vercel.app/"/>
 <meta name="theme-color" content="#05010c"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
 :root{--gold:#C9A962;--gold-soft:#E8D5A3;--ink:#05010c;--panel:#0c0618}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:#efe9dc;font-family:Inter,system-ui,sans-serif;font-weight:300}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:#efe9dc;font-family:Inter,system-ui,sans-serif;font-weight:300;text-align:center}
 .serif{font-family:"Cormorant Garamond",Georgia,serif}.gold{color:var(--gold)}
-.rule{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.55}
-.btn-gold{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.95rem 1.6rem;background:linear-gradient(180deg,#E8D5A3,#C9A962 55%,#8a6f2e);color:#1a1205;font-size:.7rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;border:none}
-.btn-ghost{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.4rem;border:1px solid rgba(201,169,98,.45);color:var(--gold-soft);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;background:transparent}
-.wa-ico{width:18px;height:18px;fill:var(--gold)}.wa-fab{position:fixed;right:1.25rem;bottom:1.25rem;z-index:50;width:52px;height:52px;border-radius:50%;background:var(--panel);border:1px solid rgba(201,169,98,.6);display:flex;align-items:center;justify-content:center;text-decoration:none}.wa-fab .wa-ico{width:24px;height:24px}
-.nav{position:sticky;top:0;z-index:40;background:rgba(5,1,12,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(201,169,98,.12)}
-.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end}.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,1,12,.35),rgba(5,1,12,.97))}
-.fleet-card{background:var(--panel);border:1px solid rgba(201,169,98,.14);overflow:hidden;transition:border-color .25s,transform .25s}.fleet-card:hover{border-color:rgba(201,169,98,.4);transform:translateY(-3px)}.fleet-card img{width:100%;height:240px;object-fit:cover;display:block;background:#1a1028}
-input,select{width:100%;background:transparent;border:1px solid rgba(201,169,98,.28);color:#efe9dc;padding:.9rem 1rem;font:inherit;outline:none}
-#progress{position:fixed;top:0;left:0;height:2px;width:0;z-index:60;background:linear-gradient(90deg,var(--gold-soft),var(--gold))}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.7;margin-left:auto;margin-right:auto}
+.btn-gold{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:1.05rem 1.85rem;background:linear-gradient(180deg,#E8D5A3,#C9A962 55%,#8a6f2e);color:#1a1205;font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;border:none;box-shadow:0 8px 28px rgba(201,169,98,.28)}
+.btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:1rem 1.7rem;border:1px solid rgba(201,169,98,.55);color:var(--gold-soft);font-size:.75rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;background:rgba(12,6,24,.55)}
+.wa-ico{width:18px;height:18px;fill:var(--gold)}
+.wa-fab{position:fixed;right:1.25rem;bottom:1.25rem;z-index:50;width:56px;height:56px;border-radius:50%;background:var(--panel);border:1px solid rgba(201,169,98,.7);display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.wa-fab .wa-ico{width:26px;height:26px}
+.nav{position:sticky;top:0;z-index:40;background:rgba(5,1,12,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(201,169,98,.15)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,1,12,.45),rgba(5,1,12,.92))}
+.fleet-card{background:var(--panel);border:1px solid rgba(201,169,98,.16);overflow:hidden;text-align:left;transition:border-color .25s,transform .25s}
+.fleet-card:hover{border-color:rgba(201,169,98,.45);transform:translateY(-3px)}
+.fleet-card img{width:100%;height:240px;object-fit:cover;display:block;background:#1a1028}
+input,select{width:100%;background:transparent;border:1px solid rgba(201,169,98,.28);color:#efe9dc;padding:.95rem 1rem;font:inherit;outline:none;text-align:left}
+#progress{position:fixed;top:0;left:0;height:4px;width:0;z-index:70;background:linear-gradient(90deg,#E8D5A3,#C9A962,#7C3AED,#C9A962);box-shadow:0 0 14px rgba(201,169,98,.75)}
+.cta-row{display:flex;flex-wrap:wrap;justify-content:center;gap:0.85rem}
 </style>
 </head>
 <body>
 <div id="progress"></div>
-<nav class="nav"><div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-<a href="#top" class="serif text-2xl tracking-wide" style="text-decoration:none;color:#efe9dc">Majestic Limousines</a>
-<div class="flex items-center gap-3">
-<a href="tel:16312810141" class="hidden md:inline text-sm gold" style="text-decoration:none">(631) 281-0141</a>
-<a class="btn-ghost" href="https://wa.me/16316977515" aria-label="WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp</a>
-<a href="#reserve" class="btn-gold">Reserve</a>
-</div></div></nav>
+
+<nav class="nav">
+  <div class="max-w-5xl mx-auto px-5 py-5 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-4">
+    <a href="#top" class="serif text-2xl md:text-3xl tracking-wide" style="text-decoration:none;color:#efe9dc">Majestic Limousines</a>
+    <div class="cta-row">
+      <a href="tel:16312810141" class="btn-gold">Call (631) 281-0141</a>
+      <a class="btn-ghost" href="https://wa.me/16316977515">
+        <svg class="wa-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Text
+      </a>
+    </div>
+  </div>
+</nav>
+
 <section id="top" class="hero">
-<img src="http://majesticlimo.kpsearch.com/active/images/chain/images/chain_280164_view_item1_box1.jpg" alt="Majestic Limousines antique Rolls Royce wedding"/>
-<div class="shade"></div>
-<div class="relative z-10 max-w-6xl mx-auto px-6 pb-24 w-full">
-<p class="gold text-xs tracking-[0.35em] uppercase mb-5">Est. Shirley, Long Island</p>
-<h1 class="serif text-5xl md:text-7xl leading-[1.05] max-w-4xl">Majestic Limousines</h1>
-<p class="mt-6 max-w-xl text-lg text-neutral-300 font-light leading-relaxed">Stretch limos. Limo buses. Super-stretch SUVs. Antique Rolls Royce. The Excalibur.<br/>The right limousine to suit the occasion.</p>
-<div class="mt-10 flex flex-wrap gap-3">
-<a href="tel:16312810141" class="btn-gold">Call (631) 281-0141</a>
-<a class="btn-ghost" href="https://wa.me/16316977515"><svg class="wa-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Message</a>
-</div></div></section>
-<section class="py-10"><div class="rule max-w-6xl mx-auto"></div>
-<div class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-<div><div class="serif text-3xl gold">30+</div><div class="text-[11px] tracking-[0.2em] uppercase text-neutral-500 mt-2">Years</div></div>
-<div><div class="serif text-3xl gold">24</div><div class="text-[11px] tracking-[0.2em] uppercase text-neutral-500 mt-2">Passenger stretch</div></div>
-<div><div class="serif text-3xl gold">5</div><div class="text-[11px] tracking-[0.2em] uppercase text-neutral-500 mt-2">Passenger Rolls</div></div>
-<div><div class="serif text-3xl gold">Open</div><div class="text-[11px] tracking-[0.2em] uppercase text-neutral-500 mt-2">Service area</div></div>
-</div><div class="rule max-w-6xl mx-auto"></div></section>
-<section id="fleet" class="max-w-6xl mx-auto px-6 py-20">
-<p class="gold text-[11px] tracking-[0.3em] uppercase mb-3">The fleet</p>
-<h2 class="serif text-4xl md:text-5xl mb-4">The right limousine to suit the occasion.</h2>
-<p class="text-neutral-400 max-w-2xl mb-14 leading-relaxed">Champagne and soft drinks included on the stretches. Interiors kept impeccably clean. Vehicles meticulously maintained. Photos from the Majestic fleet.</p>
-<div class="grid md:grid-cols-2 gap-7">
-<article class="fleet-card"><img src="http://majesticlimo.kpsearch.com/active/images/chain/images/chain_280164_view_item1_box1.jpg" alt="Antique Rolls Royce Princess Majestic Limousines"/><div class="p-7"><p class="gold text-[10px] tracking-[0.25em] uppercase">Classic · 5 passengers</p><h3 class="serif text-3xl mt-2">Antique Rolls Royce Princess</h3><p class="text-neutral-400 text-sm mt-3 leading-relaxed">Beautifully restored. English right-hand drive. White-gloved chauffeur. The classic touch for a wedding day.</p></div></article>
-<article class="fleet-card"><img src="http://majesticlimo.kpsearch.com/df/majesticlimo/leftside.jpg" alt="Majestic Limousines classic coach"/><div class="p-7"><p class="gold text-[10px] tracking-[0.25em] uppercase">Nostalgic coach</p><h3 class="serif text-3xl mt-2">The Excalibur</h3><p class="text-neutral-400 text-sm mt-3 leading-relaxed">A masterpiece of nostalgic styling. Perfect alternative to the traditional limousine.</p></div></article>
-<article class="fleet-card"><img src="http://majesticlimo.kpsearch.com/active/images/chain/images/chain_280164_view_item2_box2.jpg" alt="Majestic Limousines super stretch"/><div class="p-7"><p class="gold text-[10px] tracking-[0.25em] uppercase">Up to 24 passengers</p><h3 class="serif text-3xl mt-2">Super Stretch SUVs</h3><p class="text-neutral-400 text-sm mt-3 leading-relaxed">Lincoln Navigator and Ford Excursion stretches. Fiber optics, bar, champagne and soft drinks included.</p></div></article>
-<article class="fleet-card"><img src="http://majesticlimo.kpsearch.com/active/images/chain/images/chain_280164_view_item2_bus256.jpg" alt="Majestic Limousines luxury limo bus"/><div class="p-7"><p class="gold text-[10px] tracking-[0.25em] uppercase">Large parties & groups</p><h3 class="serif text-3xl mt-2">Luxury Limo Buses</h3><p class="text-neutral-400 text-sm mt-3 leading-relaxed">Leather perimeter seating, bars, fiber optics. Conferences, charters, socials, corporate groups.</p></div></article>
-<article class="fleet-card"><img src="http://majesticlimo.kpsearch.com/df/majesticlimo/leftside.jpg" alt="Majestic Limousines fleet"/><div class="p-7"><p class="gold text-[10px] tracking-[0.25em] uppercase">10–14 passengers</p><h3 class="serif text-3xl mt-2">Sprinter Vans & Coach</h3><p class="text-neutral-400 text-sm mt-3 leading-relaxed">Executive runs, vineyard days, airport parties. Full coach buses when the roster is large.</p></div></article>
-<article class="fleet-card p-7 flex flex-col justify-center min-h-[280px]"><p class="gold text-[10px] tracking-[0.25em] uppercase">Distance</p><h3 class="serif text-3xl mt-2">Long trips, by arrangement</h3><p class="text-neutral-300 text-sm mt-4 leading-relaxed"><strong>Long trips in and out of state with advanced notice.</strong> Regularly to North Carolina and Florida. Service area is not restrained.</p></article>
-</div></section>
-<section class="py-16" style="background:#0c0618"><div class="max-w-3xl mx-auto px-6 text-center"><div class="rule mb-10"></div>
-<p class="serif text-2xl md:text-3xl leading-relaxed text-neutral-200">Satisfaction. Trust. Reliability.<br/>Chauffeurs trained to pamper.</p>
-<p class="mt-6 text-neutral-500 text-sm tracking-wide">JFK · LaGuardia · Newark · Islip · East Hampton</p><div class="rule mt-10"></div></div></section>
-<section id="reserve" class="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16">
-<div><p class="gold text-[11px] tracking-[0.3em] uppercase mb-3">Reserve</p>
-<h2 class="serif text-4xl md:text-5xl">Call Majestic Limousines.</h2>
-<p class="mt-6 text-neutral-400 leading-relaxed">36 Beacon Street<br/>Shirley, NY 11967</p>
-<p class="mt-8"><a class="serif text-3xl gold" href="tel:16312810141" style="text-decoration:none">(631) 281-0141</a></p>
-<p class="mt-1"><a href="tel:18006609668" class="text-neutral-400" style="text-decoration:none">(800) 660-9668</a></p>
-<a class="btn-ghost mt-8 inline-flex" href="https://wa.me/16316977515"><svg class="wa-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> (631) 697-7515</a>
-<p class="mt-6 text-sm text-neutral-600"><a href="mailto:contact@majesticlimony.com" style="color:inherit">contact@majesticlimony.com</a></p></div>
-<form class="space-y-4" action="mailto:contact@majesticlimony.com" method="post" enctype="text/plain">
-<input name="name" required placeholder="Name"/>
-<input name="phone" required placeholder="Phone"/>
-<input name="details" placeholder="Occasion or destination"/>
-<select name="vehicle"><option>Antique Rolls Royce</option><option>Excalibur</option><option>Super Stretch SUV</option><option>Limo bus</option><option>Sprinter van</option><option>Coach bus</option><option>Long trip — NC / Florida</option></select>
-<button type="submit" class="btn-gold w-full">Request a quote</button>
-</form></section>
-<footer class="border-t border-yellow-900/20 py-12 px-6 text-center">
-<div class="serif text-2xl mb-3">Majestic Limousines</div>
-<p class="text-neutral-600 text-xs tracking-wide">36 Beacon Street, Shirley, NY 11967 · www.majesticlimony.com</p>
-<p class="text-neutral-700 text-xs mt-3">© 2026 Majestic Limousines</p>
+  <img src="http://majesticlimo.kpsearch.com/active/images/chain/images/chain_280164_view_item1_box1.jpg" alt="Majestic Limousines antique Rolls Royce"/>
+  <div class="shade"></div>
+  <div class="relative z-10 max-w-3xl mx-auto px-6 py-24 w-full">
+    <p class="gold text-xs tracking-[0.35em] uppercase mb-5">Est. Shirley, Long Island</p>
+    <h1 class="serif text-5xl md:text-7xl leading-[1.08]">Majestic Limousines</h1>
+    <p class="mt-6 text-lg text-neutral-300 font-light leading-relaxed">Stretch limos. Limo buses. Super-stretch SUVs.<br/>Antique Rolls Royce. The Excalibur.</p>
+    <p class="mt-3 text-neutral-400 text-sm tracking-wide">The right limousine to suit the occasion.</p>
+    <div class="cta-row mt-10">
+      <a href="tel:16312810141" class="btn-gold">Call (631) 281-0141</a>
+      <a class="btn-ghost" href="https://wa.me/16316977515?text=Need%20a%20Majestic%20Limousines%20quote">
+        <svg class="wa-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Text (631) 697-7515
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="py-12">
+  <div class="rule max-w-md"></div>
+  <div class="max-w-4xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+    <div><div class="serif text-3xl gold">30+</div><div class="text-[11px] tracking-[0.2em] uppercase text-neutral-500 mt-2">Years</div></div>
+    <div><div class="serif text-3xl gold">24</div><div class="text-[11px] tracking-[0.2em] uppercase text-neutral-500 mt-2">Passenger stretch</div></div>
+    <div><div class="serif text-3xl gold">5</div><div class="text-[11px] tracking-[0.2em] uppercase text-neutral-500 mt-2">Passenger Rolls</div></div>
+    <div><div class="serif text-3xl gold">Open</div><div class="text-[11px] tracking-[0.2em] uppercase text-neutral-500 mt-2">Service area</div></div>
+  </div>
+  <div class="rule max-w-md"></div>
+</section>
+
+<section id="fleet" class="max-w-5xl mx-auto px-6 py-20">
+  <p class="gold text-[11px] tracking-[0.3em] uppercase mb-3">The fleet</p>
+  <h2 class="serif text-4xl md:text-5xl mb-4">The right limousine to suit the occasion.</h2>
+  <p class="text-neutral-400 max-w-xl mx-auto mb-14 leading-relaxed">Champagne and soft drinks included on the stretches. Interiors kept impeccably clean. Vehicles meticulously maintained.</p>
+  <div class="grid md:grid-cols-2 gap-7 text-left">
+    <article class="fleet-card">
+      <img src="http://majesticlimo.kpsearch.com/active/images/chain/images/chain_280164_view_item1_box1.jpg" alt="Antique Rolls Royce Princess"/>
+      <div class="p-7"><p class="gold text-[10px] tracking-[0.25em] uppercase">Classic · 5 passengers</p>
+      <h3 class="serif text-3xl mt-2">Antique Rolls Royce Princess</h3>
+      <p class="text-neutral-400 text-sm mt-3 leading-relaxed">Beautifully restored. English right-hand drive. White-gloved chauffeur.</p></div>
+    </article>
+    <article class="fleet-card">
+      <img src="http://majesticlimo.kpsearch.com/df/majesticlimo/leftside.jpg" alt="Excalibur and classic fleet"/>
+      <div class="p-7"><p class="gold text-[10px] tracking-[0.25em] uppercase">Nostalgic coach</p>
+      <h3 class="serif text-3xl mt-2">The Excalibur</h3>
+      <p class="text-neutral-400 text-sm mt-3 leading-relaxed">A masterpiece of nostalgic styling. Perfect alternative to the traditional limousine.</p></div>
+    </article>
+    <article class="fleet-card">
+      <img src="http://majesticlimo.kpsearch.com/active/images/chain/images/chain_280164_view_item2_box2.jpg" alt="Super Stretch SUVs"/>
+      <div class="p-7"><p class="gold text-[10px] tracking-[0.25em] uppercase">Up to 24 passengers</p>
+      <h3 class="serif text-3xl mt-2">Super Stretch SUVs</h3>
+      <p class="text-neutral-400 text-sm mt-3 leading-relaxed">Lincoln Navigator and Ford Excursion. Fiber optics, bar. Champagne included.</p></div>
+    </article>
+    <article class="fleet-card">
+      <img src="http://majesticlimo.kpsearch.com/active/images/chain/images/chain_280164_view_item2_bus256.jpg" alt="Luxury Limo Buses"/>
+      <div class="p-7"><p class="gold text-[10px] tracking-[0.25em] uppercase">Large parties & groups</p>
+      <h3 class="serif text-3xl mt-2">Luxury Limo Buses</h3>
+      <p class="text-neutral-400 text-sm mt-3 leading-relaxed">Leather perimeter seating, bars, fiber optics. Conferences, charters, socials.</p></div>
+    </article>
+    <article class="fleet-card p-7 flex flex-col justify-center min-h-[280px] md:col-span-2 text-center">
+      <p class="gold text-[10px] tracking-[0.25em] uppercase">Distance</p>
+      <h3 class="serif text-3xl mt-2">Long trips, by arrangement</h3>
+      <p class="text-neutral-300 text-sm mt-4 leading-relaxed max-w-xl mx-auto"><strong>Long trips in and out of state with advanced notice.</strong> Regularly to North Carolina and Florida. Service area is not restrained.</p>
+      <div class="cta-row mt-8">
+        <a href="tel:16312810141" class="btn-gold">Call</a>
+        <a class="btn-ghost" href="https://wa.me/16316977515"><svg class="wa-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Text</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="py-16" style="background:#0c0618">
+  <div class="max-w-2xl mx-auto px-6">
+    <div class="rule max-w-xs mb-10"></div>
+    <p class="serif text-2xl md:text-3xl leading-relaxed text-neutral-200">Satisfaction. Trust. Reliability.<br/>Chauffeurs trained to pamper.</p>
+    <p class="mt-6 text-neutral-500 text-sm tracking-wide">JFK · LaGuardia · Newark · Islip · East Hampton</p>
+    <div class="cta-row mt-10">
+      <a href="tel:16312810141" class="btn-gold">Call (631) 281-0141</a>
+      <a class="btn-ghost" href="https://wa.me/16316977515"><svg class="wa-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Text</a>
+    </div>
+    <div class="rule max-w-xs mt-10"></div>
+  </div>
+</section>
+
+<section id="reserve" class="max-w-xl mx-auto px-6 py-24">
+  <p class="gold text-[11px] tracking-[0.3em] uppercase mb-3">Reserve</p>
+  <h2 class="serif text-4xl md:text-5xl">Call Majestic Limousines.</h2>
+  <p class="mt-6 text-neutral-400 leading-relaxed">36 Beacon Street · Shirley, NY 11967</p>
+  <p class="mt-8"><a class="serif text-3xl gold" href="tel:16312810141" style="text-decoration:none">(631) 281-0141</a></p>
+  <p class="mt-1"><a href="tel:18006609668" class="text-neutral-400" style="text-decoration:none">(800) 660-9668</a></p>
+  <div class="cta-row mt-8">
+    <a href="tel:16312810141" class="btn-gold">Call</a>
+    <a class="btn-ghost" href="https://wa.me/16316977515"><svg class="wa-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Text (631) 697-7515</a>
+  </div>
+  <form class="space-y-4 mt-12 text-left" action="mailto:contact@majesticlimony.com" method="post" enctype="text/plain">
+    <input name="name" required placeholder="Name"/>
+    <input name="phone" required placeholder="Phone"/>
+    <input name="details" placeholder="Occasion or destination"/>
+    <select name="vehicle">
+      <option>Antique Rolls Royce</option>
+      <option>Excalibur</option>
+      <option>Super Stretch SUV</option>
+      <option>Limo bus</option>
+      <option>Sprinter van</option>
+      <option>Coach bus</option>
+      <option>Long trip — NC / Florida</option>
+    </select>
+    <button type="submit" class="btn-gold w-full">Request a quote</button>
+  </form>
+</section>
+
+<footer class="border-t border-yellow-900/20 py-12 px-6">
+  <div class="serif text-2xl mb-3">Majestic Limousines</div>
+  <p class="text-neutral-600 text-xs tracking-wide">36 Beacon Street, Shirley, NY 11967 · www.majesticlimony.com</p>
+  <p class="text-neutral-700 text-xs mt-3">© 2026 Majestic Limousines</p>
 </footer>
-<a class="wa-fab" href="https://wa.me/16316977515" aria-label="WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-<script>const p=document.getElementById('progress');addEventListener('scroll',()=>{const m=document.documentElement.scrollHeight-innerHeight;p.style.width=(m>0?(scrollY/m)*100:0)+'%'});</script>
+
+<a class="wa-fab" href="https://wa.me/16316977515" aria-label="Text WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+<script>
+const p=document.getElementById('progress');
+addEventListener('scroll',()=>{const m=document.documentElement.scrollHeight-innerHeight;p.style.width=(m>0?(scrollY/m)*100:0)+'%'});
+</script>
 </body>
 </html>
